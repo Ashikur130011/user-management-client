@@ -1,6 +1,7 @@
 import React, { useContext } from 'react';
 import { Link, NavLink } from 'react-router-dom';
 import { AuthContext } from '../../Provider/AuthProvider';
+import Swal from 'sweetalert2';
 
 const Register = () => {
 
@@ -31,7 +32,13 @@ const Register = () => {
                 .then(data => {
                     console.log(data)
                     if(data.insertedId){
-                        alert('User Created Succesfully')
+                        Swal.fire({
+                            position: "top-end",
+                            icon: "success",
+                            title: "Registered Successfully",
+                            showConfirmButton: false,
+                            timer: 1500
+                          });
                     }
                 })
 
