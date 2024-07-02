@@ -58,7 +58,7 @@ const Navbar = () => {
                     <p className='mr-2'>{user.email}</p>
                     <a onClick={handleLogOut} className='btn btn-sm btn-outline btn-warning'>Log Out</a>
                     </> :
-                    <NavLink to="/login"  className="btn btn-sm btn-outline btn-secondary">Login</NavLink>
+                    <NavLink to="/login"  className="btn btn-sm btn-outline btn-success">Login</NavLink>
                 }
             </div>
         </div>

@@ -54,7 +54,7 @@ const User = () => {
         <table className="table">
           {/* head */}
           <thead>
-            <tr>
+            <tr className='bg-neutral-950 text-white'>
               <th className='font-bold text-sm'>Email</th>
               <th className='font-bold text-sm'>Register Time</th>
               <th className='font-bold text-sm'>Last Logged at</th>
